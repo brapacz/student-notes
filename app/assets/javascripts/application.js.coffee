@@ -14,4 +14,8 @@
 #= require jquery_ujs
 #= require turbolinks
 #= require bootstrap-sprockets
+#= require bootstrap-datepicker
 #= require_tree .
+
+$(document).ready ->
+  $('.datepicker').datepicker(format: 'yyyy-mm-dd')
