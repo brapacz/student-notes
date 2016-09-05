@@ -34,7 +34,6 @@ feature 'User edits teacher spec' do
     click_button 'Update Teacher'
 
     visit report_subjects_path
-    save_and_open_page
     expect(page).to have_content 'History of NY (Pies Pluto)'
   end
 end
