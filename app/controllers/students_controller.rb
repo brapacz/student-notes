@@ -3,6 +3,8 @@ class StudentsController < ApplicationController
   expose(:students) { Student.all }
   expose(:student_subject_items) { student.subject_items }
 
+  before_action :authenticate_user!
+
   def create
     if student.save
       redirect_to student_path(student), notice: I18n.t('shared.created', resource: 'Student')
