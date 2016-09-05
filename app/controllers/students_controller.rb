@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   expose(:student, attributes: :student_params)
+  expose(:students) { Student.all }
   expose(:student_subject_items) { student.subject_items }
 
   def create
