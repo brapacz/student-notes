@@ -19,6 +19,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'dotenv-rails'
 gem 'gretel'
+gem 'faker'
 
 group :development do
   gem 'better_errors'
@@ -32,7 +33,6 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'spring'
   gem 'web-console', '~> 2.0'
@@ -49,4 +49,5 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', require: false
+  gem 'rake'
 end

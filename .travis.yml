@@ -1,6 +1,12 @@
 rvm:
   - 2.2.3
 before_script:
-  - psql -c 'create database workshops_test;' -U postgres
+  - cp -v config/database.yml.travis config/database.yml
+  - bundle exec rake db:create db:schema:load
+  # - psql -c 'create database workshops_test;' -U postgres
+script:
+  - bundle exec rspec
+services:
+  - postgresql
 addons:
-  postgresql: '9.3'
+  postgresql: "9.3"

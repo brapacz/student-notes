@@ -1,4 +1,4 @@
-RoR Workshops
+RoR Workshops [![Build Status](https://travis-ci.org/brapacz/student-notes.svg?branch=master)](https://travis-ci.org/brapacz/student-notes)
 ================
 
 Hi! We think it’s great that you want to start learning **Ruby on Rails**. Taking part in workshops is also a **great opportunity to start working** with us and become one of the Netguru folks. Since you have just taken your first step on your adventure with programming in RoR, we challenge you to complete the following task. **Ready, steady… Go!**
