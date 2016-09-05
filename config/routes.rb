@@ -8,7 +8,11 @@ Rails.application.routes.draw do
     get :subjects
   end
 
-  resources :report_subjects
+  get 'report_subjects', action: 'subjects', controller: 'reports'
+
+  resources :report do
+    get :subjects
+  end
 
   root to: 'visitors#index'
 end
