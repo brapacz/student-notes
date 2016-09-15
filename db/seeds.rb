@@ -1,6 +1,6 @@
 puts "Seeds: start"
 TEACHER_TITLES = %w(Dr. Prof. TA)
-User.create!(email: 'admin@admin.com',password: 'adminadmin')
+User.create!(email: 'admin@admin.com', password: 'adminadmin')
 
 3.times do
   Teacher.create!(
@@ -38,6 +38,14 @@ SubjectItem.all.each do |subject_item|
                                                                 value: rand(1..6))
     end
   end
+end
+
+100.times do
+  Payment.create(
+    student: students.sample,
+    received_at: rand(1..200).months.ago,
+    amount: rand(10..999)
+  )
 end
 
 puts "Seeds: done"

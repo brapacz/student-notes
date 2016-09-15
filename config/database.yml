@@ -16,6 +16,6 @@ test:
   host:     localhost
   pool: 5
   username: postgres
-  # password: a
+  password: password
   database: workshops_test
 

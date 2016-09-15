@@ -16,6 +16,7 @@ en:
     show: show
     delete: delete
     show_subject_items: show subjects
+    show_payments_items: show payments
     back: Back
     add_new_item: Add new one
     subjects: subjects
