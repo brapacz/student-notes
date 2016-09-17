@@ -15,7 +15,7 @@ feature 'User checks teacher details' do
     end
   end
 
-  scenario do
+  scenario 'list contains student name', js: true do
     expect(page).to have_content(Student.all.sample.first_name)
   end
 
