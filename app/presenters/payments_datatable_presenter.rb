@@ -1,5 +1,5 @@
 class PaymentsDatatablePresenter
-  delegate :params, :h, :link_to, :number_to_currency, to: :@view
+  delegate :params, :number_to_currency, to: :@view
 
   COLUMNS = %w[first_name last_name amount received_at].freeze
 
